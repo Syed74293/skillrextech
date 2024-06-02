@@ -1,0 +1,32 @@
+<div class="cartcard">
+            <div>
+                <img src="../img/1 Hamburger, 1 Durum + 1 Doner.jpeg" alt="">
+                <div class="cartdiv">
+                    <h3>Hamburger</h3>
+                    <h5 class="price1">6$</h5>
+                    <button class="remove">remove</button>
+                </div>
+            </div>
+            <div class="qtyup">
+                <ion-icon name="remove-circle-outline" onclick="remove(this.parentNode)"></ion-icon>
+                <p class="qty">1</p>
+                <ion-icon name="add-circle-outline" onclick="add(this.parentNode)"></ion-icon>
+            </div>
+            <p class="price">6$</p>
+        </div>
+        <div class="cartcard">
+            <div>
+                <img src="../img/1 Hamburger, 1 Durum + 1 Doner.jpeg" alt="">
+                <div class="cartdiv">
+                    <h3>Hamburger</h3>
+                    <h5 class="price1">6$</h5>
+                    <button class="remove">remove</button>
+                </div>
+            </div>
+            <div class="qtyup">
+                <ion-icon name="remove-circle-outline" onclick="remove(this.parentNode)"></ion-icon>
+                <p class="qty">1</p>
+                <ion-icon name="add-circle-outline" onclick="add(this.parentNode)"></ion-icon>
+            </div>
+            <p class="price">6$</p>
+        </div>
