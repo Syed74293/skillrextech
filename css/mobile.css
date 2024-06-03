@@ -1,0 +1,151 @@
+.nav-list {
+    display: none;
+}
+
+.menu-btn {
+    display: flex;
+}
+
+.btn {
+    padding: 8px 14px;
+}
+
+#cart-count {
+    right: 1px;
+    font-size: 0.5rem;
+    padding: 2px 6px;
+}
+
+.logo{
+    width: 27%;
+}
+
+.header-flex h1{
+    font-size: 2.6rem;
+}
+
+.header-img{
+    display: none;
+}
+
+.about{
+    padding: 20px;
+    background: url('../img/bg3.png') center center/cover scroll no-repeat;
+}
+
+.about-flex-container h4, .about-flex-container h2, .about-flex-container p{
+    text-align: center;
+}
+
+.about-flex-container p{
+    width: 100% !important;
+}
+
+.aboutbtn{
+    margin: auto;
+    display: block;
+    margin-top: 18px;
+}
+
+.about img{
+    display: none;
+}
+
+.cards{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.card{
+    flex-direction: column;
+    width: 80%;
+    /* min-width: 90%; */
+    max-width: none;
+    margin-bottom: 27px;
+}
+
+.card div:first-of-type{
+    margin: auto;
+}
+
+.cardinternal{
+    width: auto;
+}
+
+.cardinternal h2, .cardinternal h5{
+    text-align: center;
+}
+
+.price{
+    margin: auto !important;
+    /* display: block; */
+}
+
+.cartbtn{
+    float: none;
+    margin: auto;
+    display: block;
+    margin-top: 12px;
+}
+
+.container{
+    flex-direction: column;
+    padding: 12px;
+}
+
+.locations, .inquiries{
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 27px;
+    padding: 20px;
+}
+
+.cartcard{
+    flex-direction: column;
+}
+
+.cartcard div:first-of-type{
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartcard div img{
+    margin: 0px;
+    margin-bottom: 1rem;
+    width: 45%;
+}
+.total{
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.mainmenu{
+    /* flex-direction: column; */
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    background: url('../img/bg3.png') center center/cover fixed no-repeat;
+}
+
+.mainmenu::-webkit-scrollbar{
+    display: none;
+}
+
+.menucards{
+    margin: 20px;
+    flex-basis: unset;
+}
+
+
+.menucardsv2{
+    padding: 3rem;
+}
+
+.menuheadingv1{
+    background: url('../img/bg3.png') center center/cover fixed no-repeat;
+}
+
+.tags{
+    display: none;
+}

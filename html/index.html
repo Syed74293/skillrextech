@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCN Kebab</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1023px)" href="../css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 350px)" href="../css/mobile-s.css  ">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script defer src="../js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="../img/nav-logo.jpeg" alt="BCN Kebab" title="BCN Kebab" class="logo">
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li><a href="/" style="color: #f7db21;">Home</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a style="cursor: pointer;" id="contactus">Contact</a></li>
+                </ul>
+                <button class="btn" onclick="window.location='/cart'">View Cart <span id="cart-count">0</span></button>
+                <button class="btn menu-btn" onclick="ham()"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/about">About us</a></li>
+                <li><a style="cursor: pointer; border-bottom: none;" onclick="window.scrollTo({top: document.getElementById('contact').offsetTop,behavior: 'smooth',});">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+    <header>
+        <section class="header" id="headerSection">
+            <div class="header-main">
+                <img class="header-img" src="../img/fork-free-img.png" alt=".">
+                <div class="header-flex">
+                    <img src="../img/frill-free-img.png" alt=".">
+                    <h1>BCN Kebab.</h1>
+                    <h6>Pizzeria-Restaurante</h6>
+                    <img src="../img/frill-free-img-bottom.png" style="width: inherit;" alt=".">
+                </div>
+                <img class="header-img" src="../img/knife-free-imge.png" alt=".">
+            </div>
+        </section>
+    </header>
+
+    <section id="toast"></section>
+
+    <section class="about">
+        <div>
+            <div class="about-flex-container">
+                <h4>Country's Most Loved</h4>
+                <h2>Welcome</h2>
+                <h4>C/Olzinelles, 16 (08014) Barcelona</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptate sunt quae necessitatibus
+                    sapiente nobis deleniti omnis numquam et veniam distinctio impedit eius laboriosam, pariatur
+                    voluptas corrupti accusantium quas, nostrum ipsam, harum doloremque adipisci?</p>
+                <button class="aboutbtn">More About us</button>
+            </div>
+            <img src="../img/aboutbg.jpg" alt=".">
+        </div>
+    </section>
+
+    <section class="kebab" style="margin-top: 40px;">
+        <h1 class="cardheading">Top-Deals</h1>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/2 Pizza.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>2 Pizza</h2>
+                    <h5>28cm, Cola (G)</h5>
+                    <p class="price">13.50€</p>
+                    <button class="cartbtn" data-id="70">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/2 Pizza with cola.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>2 Pizza</h2>
+                    <h5>32cm, Cola (G)</h5>
+                    <p class="price">17.50€</p>
+                    <button class="cartbtn" data-id="73">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Half Chicken.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Half Chicken</h2>
+                    <h5>Fries OR Rice, Salad, Drink</h5>
+                    <p class="price">7.50€</p>
+                    <button class="cartbtn" data-id="71">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Whole Chicken.png" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Whole Chicken</h2>
+                    <h5>Fries OR Rice, Salad, Cola (G)</h5>
+                    <p class="price">11.90€</p>
+                    <button class="cartbtn" data-id="72">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Chicken Nuggets.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Chicken Nuggets</h2>
+                    <h5>Fries, Salad, Drink</h5>
+                    <p class="price">6.50€</p>
+                    <button class="cartbtn" data-id="75">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Chicken Wings.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Chicken Wings</h2>
+                    <h5>Fries, Salad, Drink</h5>
+                    <p class="price">6.50€</p>
+                    <button class="cartbtn" data-id="76">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/1 Hamburger, 1 Durum + 1 Doner.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>1 Hamburger + 1 Durum + 1 Doner</h2>
+                    <h5>Cola (g)</h5>
+                    <p class="price">14.90€</p>
+                    <button class="cartbtn" data-id="52">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/5 Durum.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>5&nbsp;<span class="notranslate">Durum</span></h2>
+                    <h5>Fries + 2L Cola</h5>
+                    <p class="price">27.90€</p>
+                    <button class="cartbtn" data-id="81">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <button class="seemore" onclick="window.location='/menu#deals'">See more
+            <ion-icon name="add-outline"></ion-icon>
+        </button>
+    </section>
+
+    <hr>
+    <br>
+    <br>
+
+    <section class="kebab" style="margin-top: 40px;">
+        <h1 class="cardheading notranslate">Kebab</h1>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Doner Kebab.jpg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Doner Kebab</h2>
+                    <h5>---</h5>
+                    <p class="price">4.50€</p>
+                    <button class="cartbtn" data-id="53">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Durum Kebab Falafel.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2 class="notranslate">Durum Kebab/Falafel</h2>
+                    <h5>---</h5>
+                    <p class="price">5.00€</p>
+                    <button class="cartbtn" data-id="54">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Durum Kebab Mediana.jpg" alt="."></div>
+                <div class="cardinternal">
+                    <h2><span class="notranslate">Durum</span>&nbsp; Kebab Medium</h2>
+                    <h5>---</h5>
+                    <p class="price">6.00€</p>
+                    <button class="cartbtn" data-id="55">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Durum Kebab Super Grande.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2><span class="notranslate">Durum</span>&nbsp; Kebab Super Large</h2>
+                    <h5>---</h5>
+                    <p class="price">8.50€</p>
+                    <button class="cartbtn" data-id="56">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <button class="seemore" onclick="window.location='/menu#kebab'">See more
+            <ion-icon name="add-outline"></ion-icon>
+        </button>
+    </section>
+
+    <hr>
+    <br>
+    <br>
+
+    <section class="kebab">
+        <h1 class="cardheading">Burgers</h1>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Hamburger.png" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Hamburger</h2>
+                    <h5>---</h5>
+                    <p class="price">4.50€</p>
+                    <button class="cartbtn" data-id="49">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Double burger.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Double burger</h2>
+                    <h5>---</h5>
+                    <p class="price">5.50€</p>
+                    <button class="cartbtn" data-id="50">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Hamburger chips.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Hamburger</h2>
+                    <h5>Potato + Drink</h5>
+                    <p class="price">6.50€</p>
+                    <button class="cartbtn" data-id="51">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Durum + Doner.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Hamburger</h2>
+                    <h5><span class="notranslate">Durum</span>&nbsp; + Doner + Cola(G)</h5>
+                    <p class="price">14.90€</p>
+                    <button class="cartbtn" data-id="52">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <button class="seemore" onclick="window.location='/menu#burger'">See more
+            <ion-icon name="add-outline"></ion-icon>
+        </button>
+    </section>
+
+    <hr>
+    <br>
+    <br>
+
+    <section class="kebab">
+        <h1 class="cardheading">Pizza</h1>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Margarita pizza.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Margarita pizza</h2>
+                    <h5>Tomato, Mozzarella, Oregano</h5>
+                    <p class="price">6.00€</p>
+                    <button class="cartbtn" onclick="window.location='/menu#pizza';"onclick="window.location='/menu#pizza';">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Hawaiian Pizza.png" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Hawaiian Pizza</h2>
+                    <h5>Tomato, Mozzarella, Pineapple, Turkey ham</h5>
+                    <p class="price">6.00€</p>
+                    <button class="cartbtn" onclick="window.location='/menu#pizza';"onclick="window.location='/menu#pizza';">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Ham and cheese pizza.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Ham and cheese pizza</h2>
+                    <h5>Tomato, Mozzarella, Turkey ham</h5>
+                    <p class="price">6.00€</p>
+                    <button class="cartbtn" onclick="window.location='/menu#pizza';"onclick="window.location='/menu#pizza';">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Kebab Pizza.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Kebab Pizza</h2>
+                    <h5>Tomato, Mozzarella, Chicken, Olives, Onion, Corn</h5>
+                    <p class="price">6.00€</p>
+                    <button class="cartbtn" onclick="window.location='/menu#pizza';"onclick="window.location='/menu#pizza';">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <button class="seemore" onclick="window.location='/menu#pizza'">See more
+            <ion-icon name="add-outline"></ion-icon>
+        </button>
+    </section>
+
+    <hr>
+    <br>
+    <br>
+
+    <section class="kebab">
+        <h1 class="cardheading">Other Delicacies</h1>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Vegetable Biryani.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Vegetable Biryani</h2>
+                    <h5>---</h5>
+                    <p class="price">6.50€</p>
+                    <button class="cartbtn" data-id="105">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/Beef Curry.jpg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Beef Curry</h2>
+                    <h5>Veal</h5>
+                    <p class="price">8.00€</p>
+                    <button class="cartbtn" data-id="119">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div><img src="/img/Chicken Tikka.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Chicken Tikka</h2>
+                    <h5>Salad, Rice</h5>
+                    <p class="price">9.50€</p>
+                    <button class="cartbtn" data-id="112">Add to cart</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div><img src="/img/White Rice.jpeg" alt="."></div>
+                <div class="cardinternal">
+                    <h2>White Rice</h2>
+                    <h5>---</h5>
+                    <p class="price">2.50€</p>
+                    <button class="cartbtn" data-id="104">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+
+            <div class="card">
+                <div><img src="/img/Curry Prawn.png" alt="."></div>
+                <div class="cardinternal">
+                    <h2>Curry Prawn</h2>
+                    <h5>---</h5>
+                    <p class="price">8.50€</p>
+                    <button class="cartbtn" data-id="127">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <button id="contact" class="seemore" onclick="window.location='/menu#delicacies'">See more
+            <ion-icon name="add-outline"></ion-icon>
+        </button>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="locations">
+                <h2>Our Locations:</h2>
+                <p><ion-icon style="color: #cb3129;" name="location-outline"></ion-icon> Park Street, 12th floor, NY
+                    Lane 2</p>
+                <p><ion-icon style="color: #cb3129;" name="location-outline"></ion-icon> 123 Fifth Avenue, New York, NY
+                    10160</p>
+                <p><ion-icon style="color: #cb3129;" name="location-outline"></ion-icon> 2nd Bougainvillea, New York, NY
+                    10160</p>
+                <hr>
+                <h3>Check Reviews On</h3>
+                <div class="social-icons">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+                </div>
+            </div>
+            <div class="inquiries">
+                <h2>For Online Inquiries</h2>
+                <p>Excepteur, porttitor provident repudiandae nisi nisi. Lorem cupiditate.</p>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="text" id="phone" name="phone" placeholder="Contact No." required>
+                    <textarea name="message" id="message" placeholder="Message" required></textarea>
+                    <button type="button" onclick="msgsent()">Send Enquiries</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <img src="../img/logo.jpeg" alt="14th Street Pizza Logo" class="footer-logo">
+        <div class="footer-contact">
+            <p><strong>BCN Kebab</strong></p>
+            <p>WhatsApp: 612 549 940</p>
+            <p>Tel: 93 021 75 41</p>
+            <p>Address: C/Olzinelles, 16 (08014) Barcelona</p>
+        </div>
+        <div class="footer-timings">
+            <p><strong>Our Timings</strong></p>
+            <p>12:00 to 00:00</p>
+        </div>
+        <div class="footer-follow">
+            <p><strong>Follow Us:</strong></p>
+            <div class="footer-social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Powered by SkillRex-Tech</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = { "default_language": "en", "detect_browser_language": true, "languages": ["en", "fr", "es", "ca"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "flag_style": "3d" }</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCN | Menu</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1023px)" href="../css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 350px)" href="../css/mobile-s.css  ">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <script defer src="../js/menu.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="../img/nav-logo.jpeg" alt="BCN Kebab" title="BCN Kebab" class="logo">
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li><a href="/" style="color: #f7db21;">Home</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/#contact" style="cursor: pointer;" id="contactus">Contact</a></li>
+                </ul>
+                <button class="btn" onclick="window.location='/cart'">View Cart <span id="cart-count">0</span></button>
+                <button class="btn menu-btn" onclick="ham()"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/#contact">Contact</a></li>
+                <li><a style="cursor: pointer;"
+                        onclick="window.scrollTo({top: document.getElementById('pizza').offsetTop,behavior: 'smooth',});">Pizza</a>
+                </li>
+                <li><a style="cursor: pointer;"
+                        onclick="window.scrollTo({top: document.getElementById('kebab').offsetTop,behavior: 'smooth',});">Kebab</a>
+                </li>
+                <li><a style="cursor: pointer;"
+                        onclick="window.scrollTo({top: document.getElementById('burger').offsetTop,behavior: 'smooth',});">Burgers</a>
+                </li>
+                <li><a style="cursor: pointer;"
+                        onclick="window.scrollTo({top: document.getElementById('deals').offsetTop,behavior: 'smooth',});">Top-Deals</a>
+                </li>
+                <li><a style="cursor: pointer;"
+                        onclick="window.scrollTo({top: document.getElementById('delicacies').offsetTop,behavior: 'smooth',});">Other
+                        Delicacies</a></li>
+                <li><a style="cursor: pointer;"
+                        onclick="window.scrollTo({top: document.getElementById('curry').offsetTop,behavior: 'smooth',});"
+                        style="border-bottom: none;">Curry</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <p style="margin-top: 5rem; text-align: center;font-size: 4.4rem; font-family: 'Berkshire Swash', serif;">Menu</p>
+    <!-- top tags that will be used to select the menu categories -->
+    <div class="tags">
+        <div onclick="window.scrollTo({top: document.getElementById('pizza').offsetTop,behavior: 'smooth',});">Pizza
+        </div>
+        <div onclick="window.scrollTo({top: document.getElementById('kebab').offsetTop,behavior: 'smooth',});">Kebab
+        </div>
+        <div onclick="window.scrollTo({top: document.getElementById('burger').offsetTop,behavior: 'smooth',});">Burgers
+        </div>
+        <div onclick="window.scrollTo({top: document.getElementById('deals').offsetTop,behavior: 'smooth',});">Top-Deals
+        </div>
+        <div onclick="window.scrollTo({top: document.getElementById('delicacies').offsetTop,behavior: 'smooth',});">
+            Other Delicacies</div>
+        <div onclick="window.scrollTo({top: document.getElementById('curry').offsetTop,behavior: 'smooth',});">Curry
+        </div>
+    </div>
+
+    <!-- Pizza cards -->
+    <!-- Pizza cards -->
+    <!-- Pizza cards -->
+    <div class="menuheadingv1" id="pizza">
+        <h2 class="menuheading">Pizza</h2>
+    </div>
+    <div class="mainmenu" style="display: flex; justify-content: space-around;">
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Margarita pizza</h2>
+            <h5>Tomato, Mozzarella, Oregano</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="1" value="6">28cm</p>
+                <p class="size-option" data-id="2" value="8">32cm</p>
+                <p class="size-option" data-id="3" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Hawaiian Pizza</h2>
+            <h5>Tomato, Mozzarella, Pineapple, Turkey Ham</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="4" value="6">28cm</p>
+                <p class="size-option" data-id="5" value="8">32cm</p>
+                <p class="size-option" data-id="6" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Ham and Cheese Pizza</h2>
+            <h5>Tomato, Mozzarella, Turkey Ham</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="7" value="6">28cm</p>
+                <p class="size-option" data-id="8" value="8">32cm</p>
+                <p class="size-option" data-id="9" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Kebab Pizza</h2>
+            <h5>Tomato, Mozzarella, Chicken, Beef, Mixed, Onions, Corn, Olives, Pineapple</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="10" value="6">28cm</p>
+                <p class="size-option" data-id="11" value="8">32cm</p>
+                <p class="size-option" data-id="12" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Tuna Pizza</h2>
+            <h5>Tomato, Mozzarella, Tuna</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="13" value="6">28cm</p>
+                <p class="size-option" data-id="14" value="8">32cm</p>
+                <p class="size-option" data-id="15" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Seafood Pizza</h2>
+            <h5>Tomato, Mozzarella, Shrimp and Prawns </h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="16" value="6.5">28cm</p>
+                <p class="size-option" data-id="17" value="8.5">32cm</p>
+                <p class="size-option" data-id="18" value="10">36cm</p>
+            </div>
+            <p>6.50€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Vegetarian Pizza</h2>
+            <h5>Tomato, Mozzarella, Mushrooms, Onion, Olives, Corn, Peppers</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="19" value="6">28cm</p>
+                <p class="size-option" data-id="20" value="8">32cm</p>
+                <p class="size-option" data-id="21" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Barbecue Pizza</h2>
+            <h5>Barbecue Sauce, Mozzarella, Chicken, Onion</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="22" value="6">28cm</p>
+                <p class="size-option" data-id="23" value="8">32cm</p>
+                <p class="size-option" data-id="24" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Four Cheese Pizza</h2>
+            <h5>Tomato, Mozzarella, Parmesan, Goat Cheese, Blue Cheese</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="25" value="6">28cm</p>
+                <p class="size-option" data-id="26" value="8">32cm</p>
+                <p class="size-option" data-id="27" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Pepperoni Pizza</h2>
+            <h5> Tomato, Mozzarella, Pepperoni</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="28" value="6">28cm</p>
+                <p class="size-option" data-id="29" value="8">32cm</p>
+                <p class="size-option" data-id="30" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Caprichosa Pizza</h2>
+            <h5>Tomato, Mozzarella, Turkey Ham, Mushrooms, Olives </h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="31" value="6.5">28cm</p>
+                <p class="size-option" data-id="32" value="8.5">32cm</p>
+                <p class="size-option" data-id="33" value="10">36cm</p>
+            </div>
+            <p>6.50€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2> Prosciutto Pizza</h2>
+            <h5>Tomato, Mozzarella, Turkey Ham</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="34" value="6">28cm</p>
+                <p class="size-option" data-id="35" value="8">32cm</p>
+                <p class="size-option" data-id="36" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Mushroom and Ham Pizza </h2>
+            <h5>Tomato, Mozzarella, Mushrooms, Turkey Ham</h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="37" value="6">28cm</p>
+                <p class="size-option" data-id="38" value="8">32cm</p>
+                <p class="size-option" data-id="39" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Salami Pizza</h2>
+            <h5>Tomato, Mozzarella, Salami </h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="40" value="6">28cm</p>
+                <p class="size-option" data-id="41" value="8">32cm</p>
+                <p class="size-option" data-id="42" value="9.5">36cm</p>
+            </div>
+            <p>6.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Punjabi Pizza</h2>
+            <h5> Tomato, Mozzarella, Chicken, Onion, Olives, Peppers, Pineapple </h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="43" value="6.5">28cm</p>
+                <p class="size-option" data-id="44" value="8.5">32cm</p>
+                <p class="size-option" data-id="45" value="10.5">36cm</p>
+            </div>
+            <p>6.50€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+        <div class="menucards">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Special Pizza</h2>
+            <h5>Special Sauce, Mozzarella, Meat, Onion, Corn, Olives, Pineapple, Egg </h5>
+            <div style="display: flex;" class="pizzasize">
+                <p class="size-option" data-id="46" value="7">28cm</p>
+                <p class="size-option" data-id="47" value="9">32cm</p>
+                <p class="size-option" data-id="48" value="11">36cm</p>
+            </div>
+            <p>7.00€</p>
+            <button class="menubtn">Add to Cart</button>
+        </div>
+
+
+    </div>
+
+    <!-- kebab cards -->
+    <!-- kebab cards -->
+    <!-- kebab cards -->
+    <div class="menuheadingv1" id="kebab">
+        <h2 class="menuheading">Kebab</h2>
+    </div>
+    <div class="mainmenu" style="display: flex; justify-content: space-around;">
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Doner Kebab</h2>
+            <h5>---</h5>
+            <p>4.50€</p>
+            <button class="menubtn" data-id="53">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2 class="notranslate">Durum Kebab/Falafel</h2>
+            <h5>---</h5>
+            <p>5.00€</p>
+            <button class="menubtn" data-id="54">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2><span class="notranslate">Durum</span>&nbsp; Kebab Medium</h2>
+            <h5>---</h5>
+            <p>6.00€</p>
+            <button class="menubtn" data-id="55">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2><span class="notranslate">Durum</span>&nbsp; Kebab Large</h2>
+            <h5>---</h5>
+            <p>8.50€</p>
+            <button class="menubtn" data-id="56">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Falafel</h2>
+            <h5>4 Pieces</h5>
+            <p>3.00€</p>
+            <button class="menubtn" data-id="57">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2><span class="notranslate">Durum</span>&nbsp; Kebab</h2>
+            <h5>Potatoes, Drink</h5>
+            <p>7.00€</p>
+            <button class="menubtn" data-id="58">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2><span class="notranslate">Durum</span>&nbsp; Kebab Super Large</h2>
+            <h5>Potatoes, Drink</h5>
+            <p>10.90€</p>
+            <button class="menubtn" data-id="59">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2><span class="notranslate">Durum</span>&nbsp; Kebab Medium</h2>
+            <h5>Potatoes, Drink</h5>
+            <p>8.00€</p>
+            <button class="menubtn" data-id="60">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Doner Kebab</h2>
+            <h5>Potatoes, Drink</h5>
+            <p>6.50€</p>
+            <button class="menubtn" data-id="61">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Kebab OR Falafel Dish</h2>
+            <h5>Potatoes, Drink, Salad, Rice, Bread</h5>
+            <p>8.90€</p>
+            <button class="menubtn" data-id="62">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Kebab OR Falafel Dish</h2>
+            <h5>Potatoes OR Rice, Drink, Salad</h5>
+            <p>7.90€</p>
+            <button class="menubtn" data-id="63">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>3 &nbsp;<span class="notranslate">Durum</span>&nbsp; Kebab</h2>
+            <h5>Cola(G)</h5>
+            <p>15.90€</p>
+            <button class="menubtn" data-id="64">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Doner Kebab Coated With Cheese</h2>
+            <h5>Can</h5>
+            <p>7.00€</p>
+            <button class="menubtn" data-id="65">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>2 Seekh Kebab</h2>
+            <h5>Salad, Rice, Can</h5>
+            <p>7.50€</p>
+            <button class="menubtn" data-id="66">Add to Cart</button>
+        </div>
+
+    </div>
+
+
+    <!-- burger cards -->
+    <!-- burger cards -->
+    <!-- burger cards -->
+    <div class="menuheadingv1" id="burger">
+        <h2 class="menuheading">Burgers</h2>
+    </div>
+    <div class="mainmenu" style="display: flex; justify-content: space-around;">
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Hamburger</h2>
+            <h5>---</h5>
+            <p>4.50€</p>
+            <button class="menubtn" data-id="49">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Hamburger Double</h2>
+            <h5>---</h5>
+            <p>5.50€</p>
+            <button class="menubtn" data-id="50">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Hamburger</h2>
+            <h5>Potatoes, Drink</h5>
+            <p>6.50€</p>
+            <button class="menubtn" data-id="51">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Hamburger</h2>
+            <h5>1 Durum, 1 Doner, Cola(G)</h5>
+            <p>14.90€</p>
+            <button class="menubtn" data-id="52">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- top-deals cards -->
+    <!-- top-deals cards -->
+    <!-- top-deals cards -->
+    <div class="menuheadingv1" id="deals">
+        <h2 class="menuheading">Top-Deals</h2>
+    </div>
+    <div class="mainmenu" style="display: flex; justify-content: space-around;">
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Baked Durum</h2>
+            <h5>Potatoes, Can</h5>
+            <p>5.90€</p>
+            <button class="menubtn" data-id="67">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Baked &nbsp;<span class="notranslate">Durum</span></h2>
+            <h5>Potatoes, Can</h5>
+            <p>7.90€</p>
+            <button class="menubtn" data-id="68">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Pizza 28cm</h2>
+            <h5>Durum, Potatoes, Cola(G)</h5>
+            <p>14.90€</p>
+            <button class="menubtn" data-id="69">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>2 Pizza 28cm</h2>
+            <h5>Cola(G)</h5>
+            <p>13.50€</p>
+            <button class="menubtn" data-id="70">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Half Chicken</h2>
+            <h5>Potatoes OR Rice, Salad, Drink</h5>
+            <p>7.50€</p>
+            <button class="menubtn" data-id="71">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Whole Chicken</h2>
+            <h5>Potatoes OR Rice, Salad, Cola(G)</h5>
+            <p>11.90€</p>
+            <button class="menubtn" data-id="72">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>2 Pizza 32cm</h2>
+            <h5>Cola(G)</h5>
+            <p>17.50€</p>
+            <button class="menubtn" data-id="73">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>3 Doner</h2>
+            <h5>Cola(G)</h5>
+            <p>14.50€</p>
+            <button class="menubtn" data-id="74">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Nuggets</h2>
+            <h5>6 Pieces, Potatoes, Salad, Drink</h5>
+            <p>6.50€</p>
+            <button class="menubtn" data-id="75">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Wings</h2>
+            <h5>5 Pieces, Potatoes, Salad, Drink</h5>
+            <p>6.05€</p>
+            <button class="menubtn" data-id="76">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Whole Chicken</h2>
+            <h5>Potatoes</h5>
+            <p>8.00€</p>
+            <button class="menubtn" data-id="77">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Half Chicken</h2>
+            <h5>Potatoes</h5>
+            <p>5.00€</p>
+            <button class="menubtn" data-id="78">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>2 Pizza Large</h2>
+            <h5>2L Cola</h5>
+            <p>20.50€</p>
+            <button class="menubtn" data-id="79">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>4 &nbsp;<span class="notranslate">Durum</span></h2>
+            <h5>2L Cola</h5>
+            <p>21.50€</p>
+            <button class="menubtn" data-id="80">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>5 &nbsp;<span class="notranslate">Durum</span></h2>
+            <h5>Potatoes, 2L Cola</h5>
+            <p>27.90€</p>
+            <button class="menubtn" data-id="81">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>2 Chicken</h2>
+            <h5>Potatoes, 2L Cola</h5>
+            <p>18.50€</p>
+            <button class="menubtn" data-id="82">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>1 Pizza 36cm, 1 Chicken</h2>
+            <h5>Potatoes, 2L Cola</h5>
+            <p>19.90€</p>
+            <button class="menubtn" data-id="83">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- other delicacies cards -->
+    <!-- other delicacies cards -->
+    <!-- other delicacies cards -->
+    <div class="menuheadingv1" id="delicacies">
+        <h2 class="menuheading">Delicacies</h2>
+    </div>
+    <div class="mainmenu" style="display: flex; justify-content: space-around;">
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Saussage</h2>
+            <h5>Potato with meat</h5>
+            <p>3.00€</p>
+            <button class="menubtn" data-id="84">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Saussage</h2>
+            <h5>Potato with meat</h5>
+            <p>5.50€</p>
+            <button class="menubtn" data-id="85">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Nuggets</h2>
+            <h5>6 Pieces</h5>
+            <p>3.00€</p>
+            <button class="menubtn" data-id="86">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Wings</h2>
+            <h5>6 Pieces</h5>
+            <p>3.50€</p>
+            <button class="menubtn" data-id="87">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>French Fries</h2>
+            <h5>---</h5>
+            <p>3.00€</p>
+            <button class="menubtn" data-id="88">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Deluxe Fries</h2>
+            <h5>---</h5>
+            <p>3.50€</p>
+            <button class="menubtn" data-id="89">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Calamari</h2>
+            <h5>6 Pieces</h5>
+            <p>3.00€</p>
+            <button class="menubtn" data-id="90">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Spicy Potatoes</h2>
+            <h5>---</h5>
+            <p>3.50€</p>
+            <button class="menubtn" data-id="91">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Vegetable and Chicken Samosa</h2>
+            <h5>4 Pieces</h5>
+            <p>3.50€</p>
+            <button class="menubtn" data-id="92">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Grill</h2>
+            <h5>Naan</h5>
+            <p>9.50€</p>
+            <button class="menubtn" data-id="93">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Naan</h2>
+            <h5>---</h5>
+            <p>0.80€</p>
+            <button class="menubtn" data-id="94">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Roti</h2>
+            <h5>---</h5>
+            <p>0.80€</p>
+            <button class="menubtn" data-id="95">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Cheese Naan</h2>
+            <h5>---</h5>
+            <p>2.00€</p>
+            <button class="menubtn" data-id="96">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Garlic Naan</h2>
+            <h5>---</h5>
+            <p>2.00€</p>
+            <button class="menubtn" data-id="97">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Roghni Naan</h2>
+            <h5>---</h5>
+            <p>1.50€</p>
+            <button class="menubtn" data-id="98">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Keema Naan</h2>
+            <h5>4 Pieces</h5>
+            <p>9.90€</p>
+            <button class="menubtn" data-id="99">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Aloo Naan</h2>
+            <h5>5 Pieces</h5>
+            <p>9.90€</p>
+            <button class="menubtn" data-id="100">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Baklawa</h2>
+            <h5>---</h5>
+            <p>2.00€</p>
+            <button class="menubtn" data-id="102">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Plain Lassi</h2>
+            <h5>---</h5>
+            <p>2.00€</p>
+            <button class="menubtn" data-id="103">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>White Rice</h2>
+            <h5>---</h5>
+            <p>2.50€</p>
+            <button class="menubtn" data-id="104">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <!-- curry cards -->
+    <!-- curry cards -->
+    <!-- curry cards -->
+    <div class="menuheadingv1" id="curry">
+        <h2 class="menuheading">Curry</h2>
+    </div>
+    <div class="mainmenu" style="display: flex; justify-content: space-around;">
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Vegetable Biryani</h2>
+            <h5>---</h5>
+            <p>6.50€</p>
+            <button class="menubtn" data-id="105">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Lamb Biryani</h2>
+            <h5>---</h5>
+            <p>8.90€</p>
+            <button class="menubtn" data-id="106">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Biryani</h2>
+            <h5>---</h5>
+            <p>7.90€</p>
+            <button class="menubtn" data-id="107">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Prawn Biryani</h2>
+            <h5>---</h5>
+            <p>8.90€</p>
+            <button class="menubtn" data-id="108">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Achari</h2>
+            <h5>---</h5>
+            <p>7.50€</p>
+            <button class="menubtn" data-id="109">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Butter Chicken</h2>
+            <h5>---</h5>
+            <p>7.90€</p>
+            <button class="menubtn" data-id="110">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Saag</h2>
+            <h5>---</h5>
+            <p>8.50€</p>
+            <button class="menubtn" data-id="111">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Tikka</h2>
+            <h5>Salad, Rice</h5>
+            <p>9.50€</p>
+            <button class="menubtn" data-id="112">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Curry</h2>
+            <h5>---</h5>
+            <p>7.00€</p>
+            <button class="menubtn" data-id="113">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Cicken Tikka Masala</h2>
+            <h5>---</h5>
+            <p>8.00€</p>
+            <button class="menubtn" data-id="114">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Chicken Jalfarezi Dopiaza</h2>
+            <h5>---</h5>
+            <p>8.00€</p>
+            <button class="menubtn" data-id="115">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Lamb Curry</h2>
+            <h5>---</h5>
+            <p>8.90€</p>
+            <button class="menubtn" data-id="116">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Seekh Kebab Masala</h2>
+            <h5>---</h5>
+            <p>8.00€</p>
+            <button class="menubtn" data-id="117">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Qeema Mutter</h2>
+            <h5>---</h5>
+            <p>7.00€</p>
+            <button class="menubtn" data-id="118">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Beef Curry</h2>
+            <h5>---</h5>
+            <p>8.00€</p>
+            <button class="menubtn" data-id="119">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Saag</h2>
+            <h5>---</h5>
+            <p>6.00€</p>
+            <button class="menubtn" data-id="120">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Vegetable curyy</h2>
+            <h5>---</h5>
+            <p>6.00€</p>
+            <button class="menubtn" data-id="121">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Channa Masala</h2>
+            <h5>---</h5>
+            <p>6.00€</p>
+            <button class="menubtn" data-id="122">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Channa Daal</h2>
+            <h5>---</h5>
+            <p>6.00€</p>
+            <button class="menubtn" data-id="123">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Daal Mash</h2>
+            <h5>---</h5>
+            <p>6.00€</p>
+            <button class="menubtn" data-id="124">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Palak Paneer</h2>
+            <h5>---</h5>
+            <p>7.50€</p>
+            <button class="menubtn" data-id="125">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Palak Chicken</h2>
+            <h5>---</h5>
+            <p>8.50€</p>
+            <button class="menubtn" data-id="126">Add to Cart</button>
+        </div>
+
+        <div class="menucards menucardsv2">
+            <img src="/img/Margarita pizza.jpeg" alt="">
+            <h2>Curry Prawn</h2>
+            <h5>---</h5>
+            <p>8.50€</p>
+            <button class="menubtn" data-id="127">Add to Cart</button>
+        </div>
+
+
+
+    </div>
+
+    <section id="toast"></section>
+
+    <footer class="footer" style="margin-top: 3rem;">
+        <img src="../img/logo.jpeg" alt="14th Street Pizza Logo" class="footer-logo">
+        <div class="footer-contact">
+            <p><strong>BCN Kebab</strong></p>
+            <p>WhatsApp: 612 549 940</p>
+            <p>Tel: 93 021 75 41</p>
+            <p>Address: C/Olzinelles, 16 (08014) Barcelona</p>
+        </div>
+        <div class="footer-timings">
+            <p><strong>Our Timings</strong></p>
+            <p>12:00 to 00:00</p>
+        </div>
+        <div class="footer-follow">
+            <p><strong>Follow Us:</strong></p>
+            <div class="footer-social">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Powered by SkillRex-Tech</p>
+        </div>
+    </footer>
+
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = { "default_language": "en", "detect_browser_language": true, "languages": ["en", "fr", "es", "ca"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "flag_style": "3d" }</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+</body>
+
+</html>

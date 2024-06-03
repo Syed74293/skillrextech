@@ -1,0 +1,831 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    background-color: #cb3129;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 8px;
+    box-shadow: inset 0px 0px 5px black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cb3129;
+}
+
+/* sample hamburger*/
+
+
+/* sample hamburger */
+
+
+
+
+
+nav {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px; */
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    background-color: #cb3129;
+}
+
+nav>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+.logo {
+    width: 9%;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right .btn {
+    margin-left: 27px;
+    transition: all 0.4s ease-in;
+    position: relative;
+}
+
+#cart-count {
+    background-color: #f7db21;
+    box-shadow: inset 0px 0px 4px #767676;
+    border-radius: 100%;
+    position: absolute;
+    top: -6px;
+    right: 4px;
+    font-size: 0.8rem;
+    padding: 4px 8px;
+}
+
+.nav-right .btn:hover {
+    background-color: #cb3129;
+    box-shadow: 0px 0px 2px white;
+    color: white;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: black;
+    box-shadow: inset 0px 0px 6px #767676;
+    padding: 16px 40px;
+    border-radius: 27px;
+    cursor: pointer;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 0.95rem;
+    display: block;
+    padding: 24px 15px;
+    transition: all 0.2s ease-in;
+}
+
+.nav-list li a:hover {
+    color: #f7db21;
+}
+
+.nav {
+    background-color: #ddd;
+    /* position: fixed;
+    top: 77px; */
+    width: 100%;
+    box-sizing: border-box;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease-in;
+    border-bottom: 1px solid #cb3129;
+    /* box-shadow: 0px 2px 2px #cb3129; */
+}
+
+.nav ul {
+    list-style: none;
+    width: 100%;
+    transition: all 0.4s ease-in;
+}
+
+.nav ul li a {
+    font-size: 0.95rem;
+    font-family: "Raleway", sans-serif;
+    display: block;
+    padding: 12px 15px;
+    transition: all 0.2s ease-in;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #cb3129;
+}
+
+.nav ul li a:hover {
+    color: #cb3129;
+}
+
+.menu-btn {
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 1.4rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn ion-icon {
+    transition: all 0.4s ease;
+    transform: rotateZ(360deg);
+}
+
+.header {
+    background: url('../img/bg2.png') center center/cover fixed no-repeat;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.header::before {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.78;
+    z-index: 0;
+}
+
+.header-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.header-main img {
+    height: 100%;
+}
+
+.header-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+
+.header-flex img:first-of-type {
+    /* width: 80%; */
+    margin-bottom: 50px;
+}
+
+.header-flex h1 {
+    font-size: 6rem;
+    color: white;
+    font-family: "Berkshire Swash", serif;
+    margin-bottom: 50px;
+    text-shadow: 0px 0px 12px #cb3129;
+}
+
+.header-flex h6 {
+    font-size: 1.45rem;
+    color: #cb3129;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 70px;
+    text-shadow: 0px 0px 2px #cb3129;
+}
+
+
+/* card coding starts from here where the menu items are being edited  */
+.kebab {
+    padding-bottom: 4rem;
+}
+
+.cards {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    display: flex;
+    max-width: 45%;
+    width: 45%;
+    min-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px #cb3129;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: #F8F9FA;
+}
+
+.card img {
+    box-shadow: 0px 0px 8px #cb3129;
+    width: 8rem;
+    border-radius: 20px;
+}
+
+.cardheading {
+    text-align: center;
+    font-size: 3.4rem;
+    font-family: "Berkshire Swash", serif;
+    margin-bottom: 40px;
+}
+
+.card div {
+    margin: 1rem;
+}
+
+.cardinternal {
+    width: 100%;
+}
+
+.cardinternal h2,
+h5,
+p {
+    font-family: "Poppins", sans-serif;
+
+}
+
+.cartbtn {
+    font-family: "Poppins", sans-serif;
+}
+
+.cardinternal p {
+    width: fit-content;
+    border-radius: 10px;
+    color: white;
+    padding: 4px 10px;
+    margin: 4px;
+    background-color: #cb3129;
+}
+
+.cartbtn {
+    color: white;
+    background-color: #cb3129;
+    border-radius: 9px;
+    outline: none;
+    padding: 6px 12px;
+    border: none;
+    font-weight: bold;
+    float: right;
+}
+
+.cartbtn:hover {
+    background-color: black;
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+
+.seemore {
+    margin: auto;
+    color: #cb3129;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #cb3129;
+    display: flex;
+    background-color: transparent;
+    font-size: medium;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s ease-in;
+}
+
+.seemore:hover {
+    color: black;
+    border-bottom-color: black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    width: 90%;
+    border: 0;
+    box-shadow: 0px 1px 1px #cb3129;
+    margin: auto;
+    padding: 0;
+}
+
+.about {
+    padding: 40px;
+    background: url('../img/bg.png') center center/cover fixed no-repeat;
+}
+
+.about>div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.about>div div h4 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+}
+
+.about>div div h4:first-child {
+    font-family: "Berkshire Swash", serif;
+}
+
+.about>div div h2 {
+    margin-bottom: 24px;
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: "Berkshire Swash", serif;
+}
+
+.about>div div p {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    width: 70%;
+}
+
+.about>div img {
+    width: 27%;
+    box-shadow: 0px 5px 27px #767676;
+    border-radius: 4px;
+}
+
+.aboutbtn {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    padding: 8px 18px;
+    color: white;
+    background-color: #cb3129;
+    outline: none;
+    border: none;
+    margin-top: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+.aboutbtn:hover {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.locations,
+.inquiries {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+.locations h2,
+.inquiries h2 {
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.locations h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+.locations p,
+.inquiries p {
+    margin: 10px 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.locations hr {
+    margin: 20px 0;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #cb3129;
+    font-size: 1.8rem;
+    margin: 0 5px;
+}
+
+.social-icons a:hover {
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #cb3129;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+}
+
+form button:hover {
+    background-color: black;
+}
+
+
+.footer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-top: 1px solid #ddd;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-logo {
+    display: block;
+    width: 6%;
+    border-radius: 100%;
+    box-shadow: 0px 0px 4px black;
+}
+
+.footer-contact,
+.footer-timings,
+.footer-follow {
+    margin: 10px 0;
+}
+
+.footer-contact p,
+.footer-timings p,
+.footer-follow p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+
+/* Menu page styling starts from  here  */
+/* Menu page styling starts from  here  */
+/* Menu page styling starts from  here  */
+/* Menu page styling starts from  here  */
+/* Menu page styling starts from  here  */
+/* Menu page styling starts from  here  */
+/* Menu page styling starts from  here  */
+/* Menu page styling starts from  here  */
+
+.tags {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}
+
+.tags::-webkit-scrollbar{
+    display: none;
+}
+
+.tags div {
+    /* margin: 1.3rem; */
+    text-align: center;
+    width: 12rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #cb3129;
+    border-radius: 10px;
+    padding: 12px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0px 0px 5px black;
+}
+
+.tags div:hover {
+    background-color: rgb(216, 210, 210);
+    color: black;
+}
+
+/* menu cards  */
+
+.mainmenu{
+    /* flex-basis: 10%; */
+    flex-wrap: wrap;
+    background: url('../img/bg.png') center center/cover fixed no-repeat;
+}
+
+.menucards h2,
+.menucards h5,
+.menucards p,
+.menucards button {
+    font-family: "Poppins", sans-serif;
+    margin: 5px;
+    text-align: center;
+}
+
+.menucards {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 5px black;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: #f8f9fa;
+    flex-basis: 27%;
+}
+
+.menuheading{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+    background-color: #cb3129;
+    box-shadow: 0px 0px 5px black;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 40px;
+    width: fit-content;
+}
+
+.menuheadingv1{
+    padding-top: 60px;
+    background: url('../img/bg.png') center center/cover fixed no-repeat;
+}
+
+.menucards img {
+    box-shadow: 0px 0px 8px #cb3129;
+    width: 8rem;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+.menucards p {
+    background-color: #cb3129;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 10px;
+}
+
+.menubtn {
+    width: fit-content;
+    padding: 6px 12px;
+    background-color: #cb3129;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.menubtn:hover {
+    background-color: rgb(216, 210, 210);
+    color: black;
+}
+
+.pizzasize p:hover {
+    background-color: rgb(216, 210, 210);
+    color: black;
+    cursor: pointer;
+}
+
+.size-option.selected {
+    background-color: rgb(216, 210, 210);
+    color: black;
+    /* border-color: blue; */
+}
+
+
+/* cart page styling starts */
+/* cart page styling starts */
+/* cart page styling starts */
+/* cart page styling starts */
+/* cart page styling starts */
+
+.cartcard {
+    display: flex;
+    margin: 2rem;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    align-items: center;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #edecec;
+    user-select: none;
+    /* width: fit-content; */
+}
+
+.cartcard>div {
+    display: flex;
+    /* align-items: flex-start; */
+}
+
+.cartdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartcard img {
+    width: 15%;
+    border-radius: 5px;
+    margin-right: 14px;
+    margin-top: 2px;
+    box-shadow: 0px 0px 5px #cb3129;
+}
+
+.remove {
+    background-color: transparent;
+    outline: none;
+    text-decoration: underline;
+    color: #cb3129;
+    font-size: 0.9rem;
+    border: none;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.remove:hover {
+    color: black;
+}
+
+.qtyup {
+    display: flex;
+    align-items: center;
+}
+
+.qty {
+    border: 2px solid #333;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 3px;
+    height: fit-content;
+    padding: 4px 12px;
+}
+
+.qtyup ion-icon {
+    font-size: 1.5rem;
+    color: #cb3129;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.qtyup ion-icon:hover {
+    color: #333;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cb3129;
+    padding: 12px 24px;
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.total p{
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.checkout{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #cb3129;
+    padding: 12px 16px;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 5px black;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+.checkout:hover{
+    background-color: #333;
+    color: white;
+}
+
+.address{
+    position: fixed;
+    top: 0;
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.address::before{
+  content: "";  
+  background-color: #666;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.85;
+}
+
+.address form{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 4rem;
+    border-radius: 8px;
+    background-color: #ddd;
+    z-index: 15;
+    position: relative;
+}
+
+.button{
+    border: none;
+    outline: none;
+    padding: 12px;
+    background-color: #cb3129;
+    color: white;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.notranslate {
+    unicode-bidi: isolate;
+}
+
+
+
+
+
+/* Toast */
+#toast{
+    font-size: 1rem;
+    background-color: #cb3129;
+    color: white;
+    position: fixed;
+    bottom: 5%;
+    left: -100%;
+    padding: 8px 12px;
+    border-radius: 27px;
+    transition: all 0.2s ease-in-out;
+    z-index: 100;
+}

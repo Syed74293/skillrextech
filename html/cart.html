@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" media="screen and (max-width: 1023px)" href="../css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 350px)" href="../css/mobile-s.css  ">
+    <script defer src="../js/web-pack.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <img src="../img/nav-logo.jpeg" alt="BCN Kebab" title="BCN Kebab" class="logo">
+            <div class="nav-right">
+                <ul class="nav-list">
+                    <li><a href="/" style="color: #f7db21;">Home</a></li>
+                    <li><a href="/menu">Menu</a></li>
+                    <li><a href="/about">About us</a></li>
+                    <li><a href="/#contact" style="cursor: pointer;" id="contactus">Contact</a></li>
+                </ul>
+                <button class="btn" onclick="window.location='/cart'">View Cart <span id="cart-count">0</span></button>
+                <button class="btn menu-btn" onclick="ham()"><ion-icon name="menu-outline"></ion-icon></button>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/about">About us</a></li>
+                <li><a href="/#contact" style="border-bottom: none;">Contact</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <!-- cart cards and section of cart -->
+
+    <section id="cart">
+        <div class="total">
+            <p>Total: <span id="total">0</span>€</p>
+            <button class="checkout" onclick="checkout()">Proceed To Checkout</button>
+        </div>
+    </section>
+
+    <section class="address" style="display: none;">
+        <form action="">
+            <input type="text" id="name" required placeholder="Name">
+            <input type="number" id="phone" required placeholder="Phone Number">
+            <input type="text" id="street" required placeholder="Street">
+            <input type="text" id="house" required placeholder="House/Appartment">
+            <input type="text" id="city" required placeholder="City/Town">
+            <button class="button" type="button" onclick="checkout()"><ion-icon
+                    name="close-outline"></ion-icon></button>
+            <button type="button" id="order">Place Order</button>
+        </form>
+    </section>
+
+
+
+    <section id="toast"></section>
+
+
+    <div class="gtranslate_wrapper"></div>
+    <script>window.gtranslateSettings = { "default_language": "en", "detect_browser_language": true, "languages": ["en", "fr", "es", "ca"], "wrapper_selector": ".gtranslate_wrapper", "switcher_horizontal_position": "right", "flag_style": "3d" }</script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+
+</body>
+
+</html>
